@@ -33,6 +33,24 @@ Running ls lecture1 shows us files inside of /home/lecture1. The current directo
   ![Image](cat2.png)
 Running cat lecture1, just shows us that lecture1 is indeed a file and confirms it by reading the files in the directory. The directory does not change when the command is run and is still /home. The output is not an error.  
 
+
 3. Share an example of using the command with a path to a file as an argument.
-![Image](image2.png)
-![Image](im3.png)
+
+   a)`cd`
+   
+![Image](image2.png)  
+
+cd is for changing directories, not opening files. So using a filename like Hello.java will result in a "directory not found" error. Running cd Hello.java does not change the directory if it is /home. The output is an error since Hello.java is not a directory that cd can go to.  
+
+  b)`ls`  
+  
+![Image](im3.png)  
+
+Running ls Hello.java does not change the directory /home. Output is an error because ls is used to list or view files in a directory, and not to display information about a file.
+
+
+  c)`cat`  
+  
+  ![Image](cat3.png)  
+  
+Running cat Hello.java does not change the directory /home. Output is an error for the same reason as before.
