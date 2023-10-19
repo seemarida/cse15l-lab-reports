@@ -44,7 +44,7 @@ Running ls lecture1 shows us files inside of /home/lecture1. The current directo
   c)`cat`  
   ![Image](cat2.png)  
   
-This output is an error because we're trying to use the cat to show the contents of a directory (lecture1), rather than a file. cat can only have a file as an argument and cannot have a directory as an argument, so it outputs an error.   
+This output is an error because we're trying to use the cat to show the contents of a directory (lecture1), rather than a file. cat can only have a file as an argument and cannot have a directory as an argument, so it outputs an error. The working directory was /home, and did not change.   
 
 ---  
 
@@ -57,7 +57,7 @@ This output is an error because we're trying to use the cat to show the contents
    
 ![Image](image2.png)  
 
-cd is used on directories, so using a filename like Hello.java as an argument to cd, will result in a "directory not found" error since Hello.java is a file name and not a directory. Running cd Hello.java does not change the directory if it is /home/lecture1 or /home. The current working directory is /home/lecture1. The output is an error since Hello.java is not a directory that cd can go to.  
+cd is used on directories, so using a filename like Hello.java as an argument to cd, will result in a "directory not found" error since Hello.java is a file name and not a directory. Running cd Hello.java does not change the directory if it is /home/lecture1 or /home, in this case the current working directory was /home/lecture1. The output is an error since Hello.java is not a directory that cd can go to.  
 
   b)`ls`  
   
@@ -72,5 +72,4 @@ Running ls Hello.java does not change the directory /home. Output is an error be
   ![Image](thirdcat.png)  
   
   
-Running cat Hello.java has to change the directory to /home/lecture1 to display the code of Hello.java, you must specify what the path is before that. No errors in the output.  
-
+The current working directory starts with /home, and then running cat Hello.java changes the directory to /home/lecture1/Hello.java to display the code of Hello.java. You must specify what the path is before that, by running cat with the absolute path /home/lecture1/Hello.java. The output does not produce an error.  
