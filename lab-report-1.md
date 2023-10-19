@@ -8,6 +8,8 @@ a)`cd`
 
 ![Image](cd1.png)  
 The working directory was /home before and after the command was run because it ran with no arguments and so there were no new directories it stayed in the same one. The output was not an error.  
+![Image](new.png)  
+Meanwhile, if the working directory starts with /home/lecture1, using cd command will cause the directory to change back to /home. The output was not an error.
 
   b)`ls`  
   
