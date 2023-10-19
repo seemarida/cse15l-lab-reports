@@ -44,7 +44,7 @@ Running ls lecture1 shows us files inside of /home/lecture1. The current directo
   c)`cat`  
   ![Image](cat2.png)  
   
-Running cat lecture1, just shows us that lecture1 is indeed a file and confirms it by reading the files in the directory. The directory does not change when the command is run and is still /home. The output is not an error.  
+This output is an error because we're trying to use the cat to show the contents of a directory (lecture1), rather than a file. cat can only have a file as an argument and cannot have a directory as an argument, so it outputs an error.   
 
 ---  
 
