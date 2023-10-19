@@ -57,7 +57,7 @@ This output is an error because we're trying to use the cat to show the contents
    
 ![Image](image2.png)  
 
-cd is for changing directories, not opening files. So using a filename like Hello.java will result in a "directory not found" error. Running cd Hello.java does not change the directory if it is /home. The output is an error since Hello.java is not a directory that cd can go to.  
+cd is used on directories, so using a filename like Hello.java as an argument to cd, will result in a "directory not found" error since Hello.java is a file name and not a directory. Running cd Hello.java does not change the directory if it is /home/lecture1 or /home. The output is an error since Hello.java is not a directory that cd can go to.  
 
   b)`ls`  
   
