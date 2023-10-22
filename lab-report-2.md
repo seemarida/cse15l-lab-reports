@@ -50,4 +50,18 @@ public class StringServer {
     }
 }
 ```
-**Using /add-message..**  
+
+**Using /add-message**  
+
+  
+For both /add-message requests, the main method is called to execute StringServer, and the handleRequest method is called to handle each "request". The relevant method argument for both /add-message requests is url: a URL object that represents our given URL that contains a query s=Hello or s=How are you. query is a String variable in handleRequest that represents the received query of the URL, and param is a String array variable. currentStr will be changed in both /add-message requests.  
+
+  
+*As seen here, currentStr is changed to "1. Hello" after it is appended with num.*  
+
+![Image](hello.png)  
+*As seen here, currentStr is changed to "1. Hello *next line* 2. How are you" after it is also appended with num.*  
+
+![Image](howareyou.png)  
+
+---
