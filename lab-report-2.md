@@ -2,7 +2,7 @@
 ---
 
 ## Part 1  
-**My implementation of StringServer.java**
+My implementation of StringServer.java
 ```
 import java.io.IOException;
 import java.net.URI;
@@ -51,7 +51,7 @@ public class StringServer {
 }
 ```
 
-**Using /add-message**  
+Using /add-message  
 
   
 For both /add-message requests, the main method is called to execute StringServer, and the handleRequest method is called to handle each "request". The relevant method argument for both /add-message requests is url: a URL object that represents our given URL that contains a query s=Hello or s=How are you. query is a String variable in handleRequest that represents the received query of the URL, and param is a String array variable. currentStr will be changed in both /add-message requests.  
@@ -66,11 +66,11 @@ For both /add-message requests, the main method is called to execute StringServe
 
 ---  
 ## Part 2  
-**The path to the private key for your SSH key**  
+The path to the private key for your SSH key  
 ![Image](privatekey.png)  
-**The path to the public key for your SSH key**  
+The path to the public key for your SSH key  
 ![Image](publickey.png)  
-**A terminal interaction where you log into ieng6 with your course-specific account without being asked for a password**  
+A terminal interaction where you log into ieng6 with your course-specific account without being asked for a password  
 ![Image](login.png)  
 ---  
 ## Part 3  
