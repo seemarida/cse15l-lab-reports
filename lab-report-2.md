@@ -69,4 +69,9 @@ For both /add-message requests, the main method is called to execute StringServe
 **The path to the private key for your SSH key**  
 ![Image](privatekey.png)  
 **The path to the public key for your SSH key**  
-![Image](publickey.png)
+![Image](publickey.png)  
+**A terminal interaction where you log into ieng6 with your course-specific account without being asked for a password**  
+![Image](login.png)  
+---  
+## Part 3  
+In Week 3's lab, I learned how to configure the SSH public and private keys. Rather than having to input my password when prompted for a login, the SSH keys I generated enabled a password-free login process. This ultimately enhances efficiency and convenience when it comes to accessing my server.
