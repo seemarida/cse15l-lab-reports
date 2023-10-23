@@ -64,4 +64,9 @@ For both /add-message requests, the main method is called to execute StringServe
 
 ![Image](howareyou.png)  
 
----
+---  
+## Part 2  
+**The path to the private key for your SSH key**  
+![Image](privatekey.png)  
+**The path to the public key for your SSH key**  
+![Image](publickey.png)
