@@ -67,9 +67,9 @@ For both /add-message requests, the main method is called to execute StringServe
 ---  
 ## Part 2  
 The path to the private key for your SSH key  
-![Image](privatekey.png)  
+![Image](privk.png)  
 The path to the public key for your SSH key  
-![Image](publickey.png)  
+![Image](pubk.png)  
 A terminal interaction where you log into ieng6 with your course-specific account without being asked for a password 
 ![Image](login.png)  
 ---  
