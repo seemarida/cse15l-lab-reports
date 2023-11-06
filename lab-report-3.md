@@ -23,14 +23,18 @@ a) before
 <img width="385" alt="Screen Shot 2023-11-05 at 1 31 19 PM" src="https://github.com/seemarida/cse15l-lab-reports/assets/121886487/80e16b99-e1df-4805-85d3-2dac6bd62dec">
 
 b) after  
+
 <img width="411" alt="Screen Shot 2023-11-05 at 1 32 21 PM" src="https://github.com/seemarida/cse15l-lab-reports/assets/121886487/33bab948-8d7a-45f6-b306-20a186ba0641">  
+
 **Briefly describe why the fix addresses the issue:**  
+
 To fix this bug, I adjusted the for loop by changing i < arr.length to i < arr.length / 2. The reason this fix worked, is that it prevented the array from being reversed twice, therefore giving the proper output.  
 
 ## Part 2  
 **grep command**  
-1. ```grep -E "chain" 1471-2091-2-10.txt```  
+1. a) ```grep -E "chain" 1471-2091-2-10.txt```  
 part of the output:  
+
           ```chains. Distinct CD98 light chains appear to mediate
           heterodimer consisting of an 85 kD heavy chain and a 35
           kD light chain.
@@ -39,18 +43,45 @@ part of the output:
           cDNA confirmed that the CD98 heavy chain is the 6B12
           CD98 heavy chain was re-precipitated from an α3β1
           with CD98 (in the absence of manganese), the α chain must
-          may reside in integrin α chain extracellular or```  
+          may reside in integrin α chain extracellular or```
+   
+   b) ```grep -E "Qaeda" chapter-11.txt```  
+   
+   part of the output:  
+   
+            ```al Qaeda, America seemed very close. In a sense, they were more globalized than we
+            Before 9/11, al Qaeda and its affiliates had killed fewer than 50 Americans,
+                magnitude larger than that devoted to al Qaeda.
+                major national survey. Bin Ladin, al Qaeda, or even terrorism was not an important
+                to publicize an assessment of the growing al Qaeda danger. Our government could
+                he led, what Bin Ladin or al Qaeda intended, what past attacks they had sponsored or
+            While we now know that al Qaeda was formed in 1988, at the end of the Soviet
+                sentences in the six-page report. The al Qaeda organization was not mentioned.```  
+
    I am searching for "chain" in the .txt file shown above, the output shows some of the lines from that text file that contain the term "chain". This is interesting because it allows you to quickly extract the information that you need rather than manually searching a large file.  
-2. ```grep -c chain biomed```  
+2. a) ```grep -c chain biomed```  
 output:
-```grep: biomed: Is a directory```
-```0```
-Using this command option is useful when you want to get a quick summary or a statistic about a frequently occuring pattern in your text file. This is interesting because it helps you quickly count the number of lines that correspond to a pattern, without outputing the actual lines, just the count.
-3. ```grep -l chain 1471-2091-2-10.txt```
+```grep: biomed: Is a directory```  
+```0```  
+b) ```grep -c Qaeda 911report```  
+output:  
+```grep: 911report: Is a directory```
+```0```  
+
+Using this command option is useful when you want to get a quick summary or a statistic about a frequently occuring pattern in your text file. This is interesting because it helps you quickly count the number of lines that correspond to a pattern, without outputing the actual lines, just the count.  
+
+3. a)```grep -l chain 1471-2091-2-10.txt```  
+
 output:
-```1471-2091-2-10.txt```
-This command helps us quickly identify files that contain a keyword like "chain" in them. This is interesting because it shows us a list of filenames only and hides the matching lines.
-4. ```grep -v chain 1471-2091-2-10.txt```  
+
+```1471-2091-2-10.txt```  
+b)```grep -l Qaeda chapter-11.txt```  
+output:  
+```chapter-11.txt``` 
+
+This command helps us quickly identify files that contain a keyword like "chain" in them. This is interesting because it shows us a list of filenames only and hides the matching lines.  
+4. a)```grep -v chain 1471-2091-2-10.txt```  
+
 some of the output:  
         ```Background
         The CD98 (4F2, FRP-1) molecule, a cell surface
@@ -70,7 +101,20 @@ some of the output:
         oncogenic transformation [ 10 11 ] , metal ion transport [
         12 13 ] , cell fusion [ 14 15 ] , and amino acid transport
         [ 16 17 18 19 ].```  
-   This helps us indentify things like errors in a hypothetical data set, and helps clean your data in order to focus on relevant content, it does this by displaying all lines that do not contain the specified pattern we passed, then filters out the lines that match the pattern adn shows everthing else.
+        b)```grep -v Qaeda chapter-11.txt```  
+        some of the output:  
+        ```FORESIGHT-AND HINDSIGHT
+            In composing this narrative, we have tried to remember that we write with the benefit
+                and the handicap of hindsight. Hindsight can sometimes see the past clearly-with
+                20/20 vision. But the path of what happened is so brightly lit that it places
+                everything else more deeply into shadow. Commenting on Pearl Harbor, Roberta
+                Wohlstetter found it "much easier after the event to sort the relevant from the
+                irrelevant signals. After the event, of course, a signal is always crystal clear; we
+                can now see what disaster it was signaling since the disaster has occurred.```  
+                
+
+   This helps us indentify things like errors in a hypothetical data set, and helps clean your data in order to focus on relevant content, it does this by displaying all lines that do not contain the specified pattern we passed, then filters out the lines that match the pattern and shows everthing else.
+
    
 
 
