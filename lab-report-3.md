@@ -44,32 +44,31 @@ To fix this bug, I adjusted the for loop by changing i < arr.length to i < arr.l
 ## Part 2  
 **grep command**  
 1. a) ```grep -E "chain" 1471-2091-2-10.txt```  
+part of the output:
+```
+chains. Distinct CD98 light chains appear to mediate
+heterodimer consisting of an 85 kD heavy chain and a 35
+kD light chain.
+with specific recognition of the CD98 heavy chain. Flow
+cytometry of CHO cells transfected with CD98 heavy chain
+cDNA confirmed that the CD98 heavy chain is the 6B12
+CD98 heavy chain was re-precipitated from an α3β1
+with CD98 (in the absence of manganese), the α chain must
+may reside in integrin α chain extracellular or
+```
+This command searches for lines that contain "chain" in the above file and displays those lines. This is useful because it allows us to quickly find information related to a certain keyword from a file we want without have to do it yourself and search through the entire file.  
+b) ```grep -E "Qaeda" chapter-11.txt```  
 part of the output:  
-
-          ```chains. Distinct CD98 light chains appear to mediate
-          heterodimer consisting of an 85 kD heavy chain and a 35
-          kD light chain.
-          with specific recognition of the CD98 heavy chain. Flow
-          cytometry of CHO cells transfected with CD98 heavy chain
-          cDNA confirmed that the CD98 heavy chain is the 6B12
-          CD98 heavy chain was re-precipitated from an α3β1
-          with CD98 (in the absence of manganese), the α chain must
-          may reside in integrin α chain extracellular or```
-   This command searches for lines that contain "chain" in the above file and displays those lines. This is useful because it allows us to quickly find information related to a certain keyword from a file we want without have to do it yourself and search through the entire file.
-   
-   b) ```grep -E "Qaeda" chapter-11.txt```  
-   
-   part of the output:  
-   
-            ```al Qaeda, America seemed very close. In a sense, they were more globalized than we
-            Before 9/11, al Qaeda and its affiliates had killed fewer than 50 Americans,
-                magnitude larger than that devoted to al Qaeda.
-                major national survey. Bin Ladin, al Qaeda, or even terrorism was not an important
-                to publicize an assessment of the growing al Qaeda danger. Our government could
-                he led, what Bin Ladin or al Qaeda intended, what past attacks they had sponsored or
-            While we now know that al Qaeda was formed in 1988, at the end of the Soviet
-                sentences in the six-page report. The al Qaeda organization was not mentioned.```  
-
+```
+al Qaeda, America seemed very close. In a sense, they were more globalized than we
+Before 9/11, al Qaeda and its affiliates had killed fewer than 50 Americans,
+magnitude larger than that devoted to al Qaeda.
+major national survey. Bin Ladin, al Qaeda, or even terrorism was not an important
+to publicize an assessment of the growing al Qaeda danger. Our government could
+he led, what Bin Ladin or al Qaeda intended, what past attacks they had sponsored or
+While we now know that al Qaeda was formed in 1988, at the end of the Soviet
+sentences in the six-page report. The al Qaeda organization was not mentioned.
+```
    I am searching for "chain" in the .txt file shown above, the output shows some of the lines from that text file that contain the term "chain". This is interesting because it allows you to quickly extract the information that you need rather than manually searching a large file. The command facilitates the efficient extraction of information related to the specified keyword, minimizing the effort required to manually search through the entire file.
    
    **Source:** [GeeksforGeeks - grep Command in Unix/Linux](https://www.geeksforgeeks.org/grep-command-in-unixlinux/)
@@ -106,37 +105,41 @@ This command helps us quickly identify files that contain a keyword like "chain"
 4. a)```grep -v chain 1471-2091-2-10.txt```  
 
 some of the output:  
-        ```Background
-        The CD98 (4F2, FRP-1) molecule, a cell surface
-        disulfide-linked heterodimer, was originally described as a
-        T cell activation antigen [ 1 ] , and later was shown to
-        provide a co-stimulatory signal for CD3-mediated T-cell
-        activation [ 2 ] , independent of CD28/CD80/CD86
-        interaction [ 3 ] . In other studies, triggering of human
-        monocyte CD98 could suppress T cell proliferation [ 4 ] ,
-        or promote homotypic cell aggregation of monocytes [ 5 ] .
-        Also, CD98 may be a target antigen for natural killer cells
-        [ 6 ] , may mediate fusion of blood monocytes leading to
-        osteoclast formation [ 7 8 ] , and may modulate
-        hematopoietic cell survival and differentiation [ 9 ] .
-        The CD98 molecule is also widely expressed on rapidly
-        growing non-hematopoietic cells, where it may modulate
-        oncogenic transformation [ 10 11 ] , metal ion transport [
-        12 13 ] , cell fusion [ 14 15 ] , and amino acid transport
-        [ 16 17 18 19 ].```  
-        The -v option inverts the match, showing lines that do not contain the specified pattern. This is useful when you want to exclude certain lines from the output.  
+```
+Background
+  The CD98 (4F2, FRP-1) molecule, a cell surface
+  disulfide-linked heterodimer, was originally described as a
+  T cell activation antigen [ 1 ] , and later was shown to
+  provide a co-stimulatory signal for CD3-mediated T-cell
+  activation [ 2 ] , independent of CD28/CD80/CD86
+  interaction [ 3 ] . In other studies, triggering of human
+  monocyte CD98 could suppress T cell proliferation [ 4 ] ,
+  or promote homotypic cell aggregation of monocytes [ 5 ] .
+  Also, CD98 may be a target antigen for natural killer cells
+  [ 6 ] , may mediate fusion of blood monocytes leading to
+  osteoclast formation [ 7 8 ] , and may modulate
+  hematopoietic cell survival and differentiation [ 9 ] .
+  The CD98 molecule is also widely expressed on rapidly
+  growing non-hematopoietic cells, where it may modulate
+  oncogenic transformation [ 10 11 ] , metal ion transport [
+  12 13 ] , cell fusion [ 14 15 ] , and amino acid transport
+  [ 16 17 18 19 ].
+```
+
+The -v option inverts the match, showing lines that do not contain the specified pattern. This is useful when you want to exclude certain lines from the output.  
         
-        b)```grep -v Qaeda chapter-11.txt```  
-        some of the output:  
-        ```FORESIGHT-AND HINDSIGHT
-            In composing this narrative, we have tried to remember that we write with the benefit
-                and the handicap of hindsight. Hindsight can sometimes see the past clearly-with
-                20/20 vision. But the path of what happened is so brightly lit that it places
-                everything else more deeply into shadow. Commenting on Pearl Harbor, Roberta
-                Wohlstetter found it "much easier after the event to sort the relevant from the
-                irrelevant signals. After the event, of course, a signal is always crystal clear; we
-                can now see what disaster it was signaling since the disaster has occurred.```  
-                
+b)```grep -v Qaeda chapter-11.txt```  
+some of the output:  
+```
+FORESIGHT-AND HINDSIGHT
+In composing this narrative, we have tried to remember that we write with the benefit
+    and the handicap of hindsight. Hindsight can sometimes see the past clearly-with
+    20/20 vision. But the path of what happened is so brightly lit that it places
+    everything else more deeply into shadow. Commenting on Pearl Harbor, Roberta
+    Wohlstetter found it "much easier after the event to sort the relevant from the
+    irrelevant signals. After the event, of course, a signal is always crystal clear; we
+    can now see what disaster it was signaling since the disaster has occurred.
+```
 
    This helps us identify things like errors in a hypothetical data set and helps clean your data to focus on relevant content, it does this by displaying all lines that do not contain the specified pattern we passed, then filters out the lines that match the pattern and shows everything else.  
    
