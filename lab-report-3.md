@@ -71,9 +71,10 @@ part of the output:
                 sentences in the six-page report. The al Qaeda organization was not mentioned.```  
 
    I am searching for "chain" in the .txt file shown above, the output shows some of the lines from that text file that contain the term "chain". This is interesting because it allows you to quickly extract the information that you need rather than manually searching a large file. The command facilitates the efficient extraction of information related to the specified keyword, minimizing the effort required to manually search through the entire file.
+   
    **Source:** [GeeksforGeeks - grep Command in Unix/Linux](https://www.geeksforgeeks.org/grep-command-in-unixlinux/)
    
-2. a) ```grep -c chain biomed```  
+3. a) ```grep -c chain biomed```  
 output:
 ```grep: biomed: Is a directory```  
 ```0```
@@ -84,7 +85,8 @@ output:
 ```grep: 911report: Is a directory```
 ```0```  
 
-Using this command option is useful when you want to get a quick summary or a statistic about a frequently occurring pattern in your text file. This is interesting because it helps you quickly count the number of lines that correspond to a pattern, without outputting the actual lines, just the count. 
+Using this command option is useful when you want to get a quick summary or a statistic about a frequently occurring pattern in your text file. This is interesting because it helps you quickly count the number of lines that correspond to a pattern, without outputting the actual lines, just the count.  
+
 **Source:** [GeeksforGeeks - grep Command in Unix/Linux](https://www.geeksforgeeks.org/grep-command-in-unixlinux/)
    
 3. a)```grep -l chain 1471-2091-2-10.txt```  
@@ -97,7 +99,9 @@ b)```grep -l Qaeda chapter-11.txt```
 output:  
 ```chapter-11.txt``` 
 
-This command helps us quickly identify files that contain a keyword like "chain" in them. This is interesting because it shows us a list of filenames only and hides the matching lines.  **Source:** [GeeksforGeeks - grep Command in Unix/Linux](https://www.geeksforgeeks.org/grep-command-in-unixlinux/)
+This command helps us quickly identify files that contain a keyword like "chain" in them. This is interesting because it shows us a list of filenames only and hides the matching lines. 
+ 
+ **Source:** [GeeksforGeeks - grep Command in Unix/Linux](https://www.geeksforgeeks.org/grep-command-in-unixlinux/)
    
 4. a)```grep -v chain 1471-2091-2-10.txt```  
 
@@ -135,6 +139,7 @@ some of the output:
                 
 
    This helps us identify things like errors in a hypothetical data set and helps clean your data to focus on relevant content, it does this by displaying all lines that do not contain the specified pattern we passed, then filters out the lines that match the pattern and shows everything else.  
+   
    **Source:** [GeeksforGeeks - grep Command in Unix/Linux](https://www.geeksforgeeks.org/grep-command-in-unixlinux/)  
    
 
