@@ -43,7 +43,7 @@ To fix this bug, I adjusted the for loop by changing i < arr.length to i < arr.l
 
 ## Part 2  
 **grep command**  
-1. a) ```grep -E "chain" 1471-2091-2-10.txt```  
+1. a) `grep -E "chain" 1471-2091-2-10.txt`  
 part of the output:
 ```
 chains. Distinct CD98 light chains appear to mediate
@@ -73,36 +73,39 @@ sentences in the six-page report. The al Qaeda organization was not mentioned.
    
    **Source:** [GeeksforGeeks - grep Command in Unix/Linux](https://www.geeksforgeeks.org/grep-command-in-unixlinux/)
    
-3. a) ```grep -c chain biomed```  
+3. a) `grep -c chain biomed`  
 output:
-```grep: biomed: Is a directory```  
-```0```
+```
+grep: biomed: Is a directory
+0
+```
 The -c option is used to count the number of lines that match the specified pattern. In this case, it's useful for getting a fast statistic on the frequency of the term "chain" in the directory.
 
-b) ```grep -c Qaeda 911report```  
+b) `grep -c Qaeda 911report`  
 output:  
-```grep: 911report: Is a directory```
-```0```  
+```grep: 911report: Is a directory
+0
+```
 
 Using this command option is useful when you want to get a quick summary or a statistic about a frequently occurring pattern in your text file. This is interesting because it helps you quickly count the number of lines that correspond to a pattern, without outputting the actual lines, just the count.  
 
 **Source:** [GeeksforGeeks - grep Command in Unix/Linux](https://www.geeksforgeeks.org/grep-command-in-unixlinux/)
    
-3. a)```grep -l chain 1471-2091-2-10.txt```  
+3. a)`grep -l chain 1471-2091-2-10.txt`  
 
 output:
 
-```1471-2091-2-10.txt```  
+`1471-2091-2-10.txt`  
 The -l option is used to show only the names of files that have matching lines. This is useful when you want to determine files including a specific keyword without showing the actual matching lines.  
-b)```grep -l Qaeda chapter-11.txt```  
+b)`grep -l Qaeda chapter-11.txt`  
 output:  
-```chapter-11.txt``` 
+`chapter-11.txt` 
 
 This command helps us quickly identify files that contain a keyword like "chain" in them. This is interesting because it shows us a list of filenames only and hides the matching lines. 
  
  **Source:** [GeeksforGeeks - grep Command in Unix/Linux](https://www.geeksforgeeks.org/grep-command-in-unixlinux/)
    
-4. a)```grep -v chain 1471-2091-2-10.txt```  
+4. a)`grep -v chain 1471-2091-2-10.txt`  
 
 some of the output:  
 ```
@@ -128,7 +131,7 @@ Background
 
 The -v option inverts the match, showing lines that do not contain the specified pattern. This is useful when you want to exclude certain lines from the output.  
         
-b)```grep -v Qaeda chapter-11.txt```  
+b)`grep -v Qaeda chapter-11.txt`  
 some of the output:  
 ```
 FORESIGHT-AND HINDSIGHT
