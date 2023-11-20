@@ -139,7 +139,7 @@ In composing this narrative, we have tried to remember that we write with the be
     Wohlstetter found it "much easier after the event to sort the relevant from the
     irrelevant signals. After the event, of course, a signal is always crystal clear; we
     can now see what disaster it was signaling since the disaster has occurred.
-```
+```  
 
    This helps us identify things like errors in a hypothetical data set and helps clean your data to focus on relevant content, it does this by displaying all lines that do not contain the specified pattern we passed, then filters out the lines that match the pattern and shows everything else.  
    
