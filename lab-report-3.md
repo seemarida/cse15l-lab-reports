@@ -73,19 +73,21 @@ sentences in the six-page report. The al Qaeda organization was not mentioned.
    
    **Source:** [GeeksforGeeks - grep Command in Unix/Linux](https://www.geeksforgeeks.org/grep-command-in-unixlinux/)
    
-3. a) `grep -c chain biomed`  
+2. a) `grep -c chain biomed`  
 output:
 ```
 grep: biomed: Is a directory
 0
 ```
+
 The -c option is used to count the number of lines that match the specified pattern. In this case, it's useful for getting a fast statistic on the frequency of the term "chain" in the directory.
 
 b) `grep -c Qaeda 911report`  
 output:  
-```grep: 911report: Is a directory
-0
 ```
+grep: 911report: Is a directory
+0
+```  
 
 Using this command option is useful when you want to get a quick summary or a statistic about a frequently occurring pattern in your text file. This is interesting because it helps you quickly count the number of lines that correspond to a pattern, without outputting the actual lines, just the count.  
 
