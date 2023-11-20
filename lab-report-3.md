@@ -20,11 +20,22 @@
 <img width="599" alt="Screen Shot 2023-11-05 at 1 28 30 PM" src="https://github.com/seemarida/cse15l-lab-reports/assets/121886487/a44bb4ca-bb71-4f5c-a936-93c58d48da90"><img width="663" alt="Screen Shot 2023-11-05 at 1 29 15 PM" src="https://github.com/seemarida/cse15l-lab-reports/assets/121886487/6dd53edd-8f07-4893-9f9e-c0da3c49285b">  
 **The bug, as the before-and-after code change required to fix it:**  
 a) before  
-<img width="385" alt="Screen Shot 2023-11-05 at 1 31 19 PM" src="https://github.com/seemarida/cse15l-lab-reports/assets/121886487/80e16b99-e1df-4805-85d3-2dac6bd62dec">
+```
+static void reverseInPlace(int[] arr) {
+  for(int i = 0; I < arr.length; i +=1){
+    arr[i] = arr[arr.length - i - 1];
+  }
+}
+```
 
 b) after  
-
-<img width="411" alt="Screen Shot 2023-11-05 at 1 32 21 PM" src="https://github.com/seemarida/cse15l-lab-reports/assets/121886487/33bab948-8d7a-45f6-b306-20a186ba0641">  
+```
+static void reverseInPlace(int[] arr) {
+  for(int i = 0; I < arr.length / 2; i +=1){
+    arr[i] = arr[arr.length - i - 1];
+  }
+}
+```
 
 **Briefly describe why the fix addresses the issue:**  
 
@@ -44,6 +55,7 @@ part of the output:
           CD98 heavy chain was re-precipitated from an α3β1
           with CD98 (in the absence of manganese), the α chain must
           may reside in integrin α chain extracellular or```
+   This command searches for lines that contain "chain" in the above file and displays those lines. This is useful because it allows us to quickly find information related to a certain keyword from a file we want without have to do it yourself and search through the entire file.
    
    b) ```grep -E "Qaeda" chapter-11.txt```  
    
@@ -58,28 +70,35 @@ part of the output:
             While we now know that al Qaeda was formed in 1988, at the end of the Soviet
                 sentences in the six-page report. The al Qaeda organization was not mentioned.```  
 
-   I am searching for "chain" in the .txt file shown above, the output shows some of the lines from that text file that contain the term "chain". This is interesting because it allows you to quickly extract the information that you need rather than manually searching a large file.  
+   I am searching for "chain" in the .txt file shown above, the output shows some of the lines from that text file that contain the term "chain". This is interesting because it allows you to quickly extract the information that you need rather than manually searching a large file. The command facilitates the efficient extraction of information related to the specified keyword, minimizing the effort required to manually search through the entire file.
+   **Source:** [GeeksforGeeks - grep Command in Unix/Linux](https://www.geeksforgeeks.org/grep-command-in-unixlinux/)
+   
 2. a) ```grep -c chain biomed```  
 output:
 ```grep: biomed: Is a directory```  
-```0```  
+```0```
+The -c option is used to count the number of lines that match the specified pattern. In this case, it's useful for getting a fast statistic on the frequency of the term "chain" in the directory.
+
 b) ```grep -c Qaeda 911report```  
 output:  
 ```grep: 911report: Is a directory```
 ```0```  
 
-Using this command option is useful when you want to get a quick summary or a statistic about a frequently occuring pattern in your text file. This is interesting because it helps you quickly count the number of lines that correspond to a pattern, without outputing the actual lines, just the count.  
-
+Using this command option is useful when you want to get a quick summary or a statistic about a frequently occurring pattern in your text file. This is interesting because it helps you quickly count the number of lines that correspond to a pattern, without outputting the actual lines, just the count. 
+**Source:** [GeeksforGeeks - grep Command in Unix/Linux](https://www.geeksforgeeks.org/grep-command-in-unixlinux/)
+   
 3. a)```grep -l chain 1471-2091-2-10.txt```  
 
 output:
 
 ```1471-2091-2-10.txt```  
+The -l option is used to show only the names of files that have matching lines. This is useful when you want to determine files including a specific keyword without showing the actual matching lines.  
 b)```grep -l Qaeda chapter-11.txt```  
 output:  
 ```chapter-11.txt``` 
 
-This command helps us quickly identify files that contain a keyword like "chain" in them. This is interesting because it shows us a list of filenames only and hides the matching lines.  
+This command helps us quickly identify files that contain a keyword like "chain" in them. This is interesting because it shows us a list of filenames only and hides the matching lines.  **Source:** [GeeksforGeeks - grep Command in Unix/Linux](https://www.geeksforgeeks.org/grep-command-in-unixlinux/)
+   
 4. a)```grep -v chain 1471-2091-2-10.txt```  
 
 some of the output:  
@@ -101,6 +120,8 @@ some of the output:
         oncogenic transformation [ 10 11 ] , metal ion transport [
         12 13 ] , cell fusion [ 14 15 ] , and amino acid transport
         [ 16 17 18 19 ].```  
+        The -v option inverts the match, showing lines that do not contain the specified pattern. This is useful when you want to exclude certain lines from the output.  
+        
         b)```grep -v Qaeda chapter-11.txt```  
         some of the output:  
         ```FORESIGHT-AND HINDSIGHT
@@ -113,9 +134,9 @@ some of the output:
                 can now see what disaster it was signaling since the disaster has occurred.```  
                 
 
-   This helps us indentify things like errors in a hypothetical data set, and helps clean your data in order to focus on relevant content, it does this by displaying all lines that do not contain the specified pattern we passed, then filters out the lines that match the pattern and shows everthing else.  
-   **Sources:**  
-   https://www.geeksforgeeks.org/grep-command-in-unixlinux/
+   This helps us identify things like errors in a hypothetical data set and helps clean your data to focus on relevant content, it does this by displaying all lines that do not contain the specified pattern we passed, then filters out the lines that match the pattern and shows everything else.  
+   **Source:** [GeeksforGeeks - grep Command in Unix/Linux](https://www.geeksforgeeks.org/grep-command-in-unixlinux/)  
+   
 
    
 
