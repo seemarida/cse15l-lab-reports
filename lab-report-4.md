@@ -6,20 +6,24 @@ I first typed `ssh cs15lfa23mh@ieng6.ucsd.edu` to log into the remote server, th
 ## Step 2: Clone your fork of the repository from your GitHub account (using the SSH URL)  
 <ctrl+c> from GitHub to copy the SSH URL.  
 <img width="1494" alt="Screen Shot 2023-12-02 at 6 03 26 PM" src="https://github.com/seemarida/cse15l-lab-reports/assets/121886487/030b0807-0e49-4e0d-9022-18dde08a6366">  
+  
 then typed `git clone` then hit <ctrl+v> to clone the URL, and hit <enter>.  
 <img width="759" alt="Screen Shot 2023-12-02 at 6 04 59 PM" src="https://github.com/seemarida/cse15l-lab-reports/assets/121886487/2c0c4a43-d1ba-4c4c-9ce2-dbf6c36c5f33">  
   
 ## Step 3: Run the tests, demonstrating that they fail  
 Typed `cd lab7` to go into the lab7 directory where the test script is located.  
 <img width="724" alt="Screen Shot 2023-12-02 at 6 06 33 PM" src="https://github.com/seemarida/cse15l-lab-reports/assets/121886487/f8c31f8f-8d5e-4d07-bad7-1bbcf2f21411">  
+  
 then typed `bash t` <tab> then `.` so `bash test.sh` popped up, then hit <enter> to run the test script commands.  
 <img width="741" alt="Screen Shot 2023-12-02 at 6 08 28 PM" src="https://github.com/seemarida/cse15l-lab-reports/assets/121886487/dd37edc6-6f4a-4c26-bc08-a7163bee5be5">  
   
 ## Step 4: Edit the code file ListExamples.java to fix the failing test  
 typed `vim L` <tab> `.j` <tab> so that `vim ListExamples.java` pops up, then hit <enter>, to view the ListExamples.java file and look for the error I need to edit.  
 <img width="585" alt="Screen Shot 2023-12-02 at 6 13 44 PM" src="https://github.com/seemarida/cse15l-lab-reports/assets/121886487/34b06cd4-fd50-482d-96ed-e8d41c4d5d59">  
+  
 in the Vim window, I typed `i` to go from normal mode to insert mode, < down > x43, < left > x7, < backspace >, then `2`, in order to change `index1` to `index2`  
 <img width="549" alt="Screen Shot 2023-12-02 at 6 17 24 PM" src="https://github.com/seemarida/cse15l-lab-reports/assets/121886487/57a6cd2b-3dd9-4357-a541-2718785344cd">  
+  
 I then pressed <esc> to exit insert mode and go back to normal mode, then I typed `:wq` and <enter> to save my changes and exit Vim.  
   
 ## Step 5: Run the tests, demonstrating that they now succeed  
