@@ -33,13 +33,10 @@ Just ran my tests again, and it finally worked, thanks for your help!
 
 **Setup**  
 - The file & directory structure needed  
-  lab7
-  
-      ListExamples.java
-  
-      ListExamplesTests.java
-  
-      test.sh  
+  - lab7  
+    - ListExamples.java  
+    - ListExamplesTests.java  
+    - test.sh  
   
 - The contents of each file before fixing the bug
   
