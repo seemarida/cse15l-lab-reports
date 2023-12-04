@@ -32,11 +32,14 @@ Just ran my tests again, and it finally worked, thanks for your help!
 <img width="453" alt="Screen Shot 2023-12-03 at 4 37 12 PM" src="https://github.com/seemarida/cse15l-lab-reports/assets/121886487/7fe3b812-7658-4f4a-bf9f-7cdc7f5a0010">  
 
 **Setup**  
-- The file & directory structure needed  
-  - lab7  
-    - ListExamples.java  
-    - ListExamplesTests.java  
-    - test.sh  
+- The file & directory structure needed
+```
+  *lab7  
+    *ListExamples.java  
+    *ListExamplesTests.java  
+    *test.sh
+```
+
   
 - The contents of each file before fixing the bug
   
